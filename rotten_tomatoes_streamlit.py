@@ -1,4 +1,4 @@
-from nltk.sentiment import SentimentIntensityAnalyzer
+import nlk
 import bs4
 import requests
 import re
