@@ -3,7 +3,6 @@ aitextgen
 nltk
 bs4
 requests
-re
 pandas
 pickle
 os
