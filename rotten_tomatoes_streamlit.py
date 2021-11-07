@@ -49,7 +49,7 @@ def web_scraper_audience(movie):
 def sentiment_analysis(review_list):
     # Sentiment analyzer (VADER)
     # nltk.download('vader_lexicon')
-    sa = SentimentIntensityAnalyzer()
+    sa = sentiment.SentimentIntensityAnalyzer()
 
     sa_dict = sa.polarity_scores("I see says the blind man")
 
