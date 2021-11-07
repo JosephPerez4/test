@@ -1,2 +1,2 @@
-import streamlit
+streamlit
 from aitextgen import aitextgen 
