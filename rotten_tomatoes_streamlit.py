@@ -1,5 +1,5 @@
 import nltk
-nltk.downloader.download('vader_lexicon')
+nltk.download('vader_lexicon')
 import bs4
 import requests
 import re
