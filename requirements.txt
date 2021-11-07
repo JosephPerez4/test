@@ -1,2 +1,13 @@
 streamlit
 aitextgen 
+nltk
+bs4
+requests
+re
+pandas
+pickle
+os
+sklearn
+numpy
+plotly
+matplotlib
