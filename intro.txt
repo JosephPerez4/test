@@ -1,0 +1,12 @@
+Rotten Tomatoes is a platform that aggregates movie reviews from movie critics and audiences. It contains a plethora
+of text data as well as metadata about a vast amount of different movies. Rotten Tomatoes' Tomatometer, based on the
+scores given by its registered movie critics, is also one of the most widely utilized tools for summarizing a movie's
+critical reception. Unlike websites such as imdb, which use data from a large database of users, Rotten Tomatoes only
+accepts critic reviews from verified critics.
+
+The nature of reviews on Rotten Tomatoes allows us to perform various different forms of natural language processing
+and text analysis techniques that tell us a great deal about the movies. The audience reception of movies is a key
+factor in the movie creation process. There are movies that may have positive critical reception, but still be seen
+in a poor light by audiences. In our project, we analyzed the text of the audience and critic reviews, performed
+predictive analysis on the audience's receptions of the movies, and also created a text generation model that mimics
+a critic that would write movie reviews for Rotten Tomatoes.
