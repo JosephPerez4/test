@@ -1,5 +1,4 @@
 from nltk.sentiment import SentimentIntensityAnalyzer
-nltk.download('vader_lexicon')
 import bs4
 import requests
 import re
@@ -15,6 +14,7 @@ import plotly.figure_factory as ff
 import matplotlib.pyplot as plt
 from aitextgen import aitextgen
 
+nltk.download('vader_lexicon')
 
 def web_scraper_critics(movie):
     critic_url = 'http://www.rottentomatoes.com/m/'+movie + '/reviews?type=top_critics'
