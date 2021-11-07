@@ -151,7 +151,7 @@ def sentiment():
                    "positive_sentiments", "negative_sentiments"]]
 
     st.subheader("Critic Movie Reviews Sentiment Scores")
-    critic_sent = pd.read_csv("Data/critics_sentiment.csv")
+    critic_sent = pd.read_csv("Data/critics_sentiment.csv",encoding = 'unicode_escape')
     critic_sent = critic_sent[["movie_name", "review", "positive", "negative", "neutral",
                                "compound", "decision"]].groupby("movie_name").mean()
     critic_sent = critic_sent.reset_index()
