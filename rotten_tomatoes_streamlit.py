@@ -15,7 +15,6 @@ import plotly.figure_factory as ff
 import matplotlib.pyplot as plt
 from aitextgen import aitextgen
 
-@st.cache
 nltk.download('vader_lexicon')
 
 @st.cache
