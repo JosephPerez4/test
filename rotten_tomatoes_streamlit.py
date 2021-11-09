@@ -239,18 +239,21 @@ def modeling():
     source_code = html.read()
     components.html(source_code, height=1000, width=1200)
 
-
+@st.cache
 def tfidf():
     text = open("tfidf.txt").read()
-    st.header("TF-IDF")
-    st.write(text)
-    st.image("Images/comedy.png")
+    #st.header("TF-IDF")
+    #st.write(text)
+    #st.image("Images/comedy.png")
 
 
 intro()
 scraping()
 sentiment()
 tfidf()
+st.header("TF-IDF")
+st.write(text)
+st.image("Images/comedy.png")
 modeling()
 predictive()
 text_gen()
