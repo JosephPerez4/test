@@ -239,12 +239,12 @@ def modeling():
     source_code = html.read()
     components.html(source_code, height=1000, width=1200)
 
-@st.cache
+@st.cache(suppress_st_warning=True) 
 def tfidf():
     text = open("tfidf.txt").read()
     st.header("TF-IDF")
-    #st.write(text)
-    #st.image("Images/comedy.png")
+    st.write(text)
+    st.image("Images/comedy.png")
 
 
 intro()
