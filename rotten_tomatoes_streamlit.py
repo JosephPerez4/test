@@ -168,7 +168,7 @@ def sentiment():
     #
     # st.markdown('<style>body{background-color: Red;}</style>',unsafe_allow_html=True)
 
-@st.cache(hash_funcs={"MyUnhashableClass": lambda _: None}
+
 def text_gen():
     temperatures = [0.2, 0.5, 1.0, 1.2]
 
