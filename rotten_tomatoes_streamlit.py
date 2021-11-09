@@ -85,7 +85,7 @@ def sentiment_analysis(review_list):
     # Add average sentiment as a new column to the dataframe
     return [compound_score, positive_score, neutral_score, negative_score]
 
-@st.cache
+@st.cache(ttl=24*3600)
 def predictive():
     st.header("Rotten Tomatoes Audience Score Prediction")
     text = open("predictive.txt").read()
