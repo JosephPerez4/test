@@ -3,6 +3,7 @@ import bs4
 import requests
 import re
 import streamlit as st
+import streamlit.components.v1 as components
 import nltk
 import pandas as pd
 import pickle
