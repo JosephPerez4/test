@@ -3,7 +3,7 @@ import bs4
 import requests
 import re
 import streamlit as st
-#import streamlit.components.v1 as components
+import streamlit.components.v1 as components
 import nltk
 import pandas as pd
 import pickle
@@ -242,9 +242,9 @@ def tfidf():
     text = open("tfidf.txt").read()
     st.header("TF-IDF")
     st.write(text)
-    #html = open("topic_modelling_critics.html", 'r', encoding='utf-8')
-    #source_code = html.read()
-    #components.html(source_code, height=1200, width=1200)
+    html = open("topic_modelling_critics.html", 'r', encoding='utf-8')
+    source_code = html.read()
+    components.html(source_code, height=1200, width=1200)
 
 
 intro()
