@@ -242,7 +242,7 @@ def modeling():
 @st.cache
 def tfidf():
     text = open("tfidf.txt").read()
-    #st.header("TF-IDF")
+    st.header("TF-IDF")
     #st.write(text)
     #st.image("Images/comedy.png")
 
@@ -251,9 +251,6 @@ intro()
 scraping()
 sentiment()
 tfidf()
-st.header("TF-IDF")
-st.write(text)
-st.image("Images/comedy.png")
 modeling()
 predictive()
 text_gen()
