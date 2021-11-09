@@ -85,7 +85,7 @@ def sentiment_analysis(review_list):
     # Add average sentiment as a new column to the dataframe
     return [compound_score, positive_score, neutral_score, negative_score]
 
-
+@st.cache
 def predictive():
     st.header("Rotten Tomatoes Audience Score Prediction")
     text = open("predictive.txt").read()
@@ -106,7 +106,7 @@ def predictive():
         if len(critic_reviews) == 0:
             st.success('There are no critic reviews for this movie')
             return
-    @st.cache
+        
     model = pickle.load(open('model.pkl', 'rb'))
     if st.button('Predict Audience Score'):
         critics = sentiment_analysis(critic_reviews)
