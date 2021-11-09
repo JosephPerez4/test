@@ -35,7 +35,7 @@ def web_scraper_critics(movie):
 
 @st.cache
 def web_scraper_audience(movie):
-    st.success("YO")
+    #st.success("YO")
     audience_url = 'https://www.rottentomatoes.com/m/' + movie + '/reviews?type=user'
     response = requests.get(audience_url)
     soup = bs4.BeautifulSoup(response.text)
