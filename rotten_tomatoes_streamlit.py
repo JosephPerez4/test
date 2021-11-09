@@ -245,7 +245,8 @@ def tfidf():
     st.header("TF-IDF")
     st.write(text)
     st.image("Images/comedy.png")
-
+t=tfidf()
+t
 
 intro()
 scraping()
