@@ -253,6 +253,5 @@ sentiment()
 tfidf()
 modeling()
 predictive()
-@st.cache
 text_gen()
 conclusion()
