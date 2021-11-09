@@ -17,7 +17,7 @@ from aitextgen import aitextgen
 
 nltk.download('vader_lexicon')
 
-@st.cache
+#@st.cache
 def web_scraper_critics(movie):
     critic_url = 'http://www.rottentomatoes.com/m/'+movie + '/reviews?type=top_critics'
     #audience_url = 'https://www.rottentomatoes.com/m/' + movie + '/reviews?type=user'
@@ -33,7 +33,7 @@ def web_scraper_critics(movie):
     df.to_csv('cleaned_reviews_critics.csv')
     return
 
-@st.cache
+#@st.cache
 def web_scraper_audience(movie):
     #st.success("YO")
     audience_url = 'https://www.rottentomatoes.com/m/' + movie + '/reviews?type=user'
