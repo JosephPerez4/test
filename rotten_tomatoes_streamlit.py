@@ -85,7 +85,7 @@ def sentiment_analysis(review_list):
     # Add average sentiment as a new column to the dataframe
     return [compound_score, positive_score, neutral_score, negative_score]
 
-@st.cache(ttl=24*3600)
+
 def predictive():
     st.header("Rotten Tomatoes Audience Score Prediction")
     text = open("predictive.txt").read()
@@ -237,7 +237,7 @@ def modeling():
     st.write(text)
     html = open("topic_modelling_critics.html", 'r', encoding='utf-8')
     source_code = html.read()
-    components.html(source_code, height=1200, width=1200)
+    components.html(source_code, height=1000, width=1200)
 
 
 def tfidf():
