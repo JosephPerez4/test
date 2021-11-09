@@ -168,7 +168,7 @@ def sentiment():
     # st.write(fig)
     #
     # st.markdown('<style>body{background-color: Red;}</style>',unsafe_allow_html=True)
-
+@st.cache
 def text_gen():
     temperatures = [0.2, 0.5, 1.0, 1.2]
 
