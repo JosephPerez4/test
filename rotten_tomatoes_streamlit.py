@@ -242,8 +242,8 @@ def tfidf():
     text = open("tfidf.txt").read()
     st.header("TF-IDF")
     st.write(text)
-    html = open("topic_modelling_critics.html", 'r', encoding='utf-8')
-    source_code = html.read()
+    #html = open("topic_modelling_critics.html", 'r', encoding='utf-8')
+    #source_code = html.read()
     components.html(source_code, height=1200, width=1200)
 
 
