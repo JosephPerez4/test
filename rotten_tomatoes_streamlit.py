@@ -168,7 +168,7 @@ def sentiment():
     #
     # st.markdown('<style>body{background-color: Red;}</style>',unsafe_allow_html=True)
 
-
+@st.cache
 def text_gen():
     temperatures = [0.2, 0.5, 1.0, 1.2]
 
@@ -177,7 +177,7 @@ def text_gen():
     description = 'Utilizing both GPT-2 as well as aitextgen, the text generation model is trained on the critic reviews from the top four most popular genres. The model then takes in a prompt inputted by the user and generates 100 characters of text. The prompt can be a movie title or a user written review. The model has a temperature parameter that essentially determines how conservative(lower values) or risky(higher values) the model\'s prediction will be. In the example, a phrase is inputted with varying temperature values. The lower valued temperature examples more closely resemble actual phrases used in the critic reviews while the higher values become more unintelligible.'
 
     st.write(description)
-    @st.cache
+   
     ex = aitextgen(model_folder="comedy_trained_model",
                    tokenizer_file="comedy_aitextgen.tokenizer.json")
 
